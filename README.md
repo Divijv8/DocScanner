@@ -63,6 +63,4 @@ pip install opencv-python imutils scikit-image numpy
 python scanner.py
 ```
 
----
-
-Let me know if you want a **fancy badge section**, **setup instructions**, or a **GIF demo** too!
+And you're done!!...... Happy Scanning 😀
