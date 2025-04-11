@@ -60,6 +60,18 @@ for c in cnts:
         screenCnt = approx
         break
 
+# Fallback: if no 4-corner shape, use bounding box of largest contour
+if screenCnt is None:
+    print("Could not detect 4-corner document. Falling back to bounding rectangle...")
+    largest_contour = cnts[0]
+    x, y, w, h = cv2.boundingRect(largest_contour)
+    screenCnt = np.array([
+        [[x, y]],
+        [[x + w, y]],
+        [[x + w, y + h]],
+        [[x, y + h]]
+    ])
+
 if screenCnt is None:
     print("Could not detect document corners.")
     exit()
