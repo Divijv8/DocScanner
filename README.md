@@ -50,7 +50,7 @@ This tool uses **automatic contour detection** and allows **manual corner correc
 
 | Original Image                  | Scanned Output                  |
 |-------------------------------|----------------------------------|
-| ![original](original.png) | ![scanned](scanned.png) |
+| ![original](original.png) | ![scanned](scanned1.png) |
 
 ---
 
